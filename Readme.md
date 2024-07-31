@@ -38,12 +38,14 @@ HealthPredict AI is a web application that allows users to upload medical images
    cd healthpredict-ai
 
 2. Install dependencies for the backend:
-cd ../server
-npm install
+   ```bash
+   cd ../server
+   npm install
 
-3. Install dependencies for the frontend:
-cd ../client
-npm install
+4. Install dependencies for the frontend:
+   ```bash
+   cd ../client
+   npm install
 
 ## Environment Variables
 
@@ -51,36 +53,44 @@ Create a .env file in the both directories and add the following environment var
 
 ### In ../server/.env
 - **MongoDB**
+  ```bash
     MONGO_URI=your_mongodb_connection_string
 - **JWT**
+  ```bash
     JWT_SECRET=your_jwt_secret
 - **Google OAuth**
+  ```bash
     GOOGLE_CLIENT_ID=your_google_client_id
     GOOGLE_CLIENT_SECRET=your_google_client_secret
     GOOGLE_CALLBACK_URL=your_google_callback_url
     AUTH_REDIRECT_URL=your_client_redirect_url
 - **SMTP USER**
+  ```bash
     EMAIL_USER=user_email
     EMAIL_PASS=user_app_pass_key
 
 ### In ../client/.env
 - **server**
+  ```bash
     VITE_SERVER_BASE_URL=your_server_url
 - **Cloudinary**
+  ```bash
     VITE_CLOUDINARY_CLOUD_NAME=your_cloud_name
     VITE_CLOUDINARY_CLOUD_PRESET=your_cloud_preset
 
 ## Usage
 
 1. Start the backend server:
+   ```bash
     cd ../server
     node server.js
 
-2. Start the frontend development server:
+3. Start the frontend development server:
+   ```bash
     cd ../client
     npm run dev
 
-3. Access the application at http://localhost:5173.
+5. Access the application at http://localhost:5173.
    
 ## Deployment
 
